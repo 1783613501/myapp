@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p><%= num%></p>
+    <p><%= arr%></p>
+
+    <p><%= onoff%></p>
+
+    <% if(onoff) {%>
+      <h1>布尔true才能显示我</h1>
+      <%}else {%>
+        <h1>不好</h1>
+    <%}%>
+
+
+    <p>
+      <%=html%>
+      <!-- <%-html%> -->
+    </p>
+
+    <%for(var i =0 ; i<arr.length; i++){%>
+      <li><%=arr[i]%></li>
+      <%}%>
+
+  </body>
+</html>
